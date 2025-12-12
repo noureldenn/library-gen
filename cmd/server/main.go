@@ -42,7 +42,8 @@ func AuthMiddleware() gin.HandlerFunc {
 }
 
 func main() {
-	godotenv.Load()
+
+	_ = godotenv.Load()
 	db.Init()
 
 	r := gin.Default()
